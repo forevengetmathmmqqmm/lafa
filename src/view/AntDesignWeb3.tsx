@@ -20,9 +20,12 @@ const AntDesignWeb3 = () => {
     // const accounts = await (window as any).ethereum.request({ method: 'eth_accounts' });
     // console.log('====', accounts);
   }
-  return <div className="w-screen h-screen flex items-center justify-center">
+  return <div className="w-screen h-screen flex justify-center">
     <div className="flex-1"></div>
-    <div className="w-[640px]">
+    <div className="w-[640px] h-full bg-[url('@/assets/loadBg.png')] flex items-center justify-center">
+      <div>
+        <img src="@/assets/loading.gif" alt="" />
+      </div>
       {
         account?.address ? <div>{ account?.address}</div> : 
         <div onClick={() => disconnect?.()}>connect</div>
