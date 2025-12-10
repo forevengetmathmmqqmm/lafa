@@ -10,6 +10,8 @@ import { store } from './store'
 import './index.css'
 // 导入主应用组件
 import App from './App.tsx'
+// 导入amfe-flexible，用于实现rem适配
+import 'amfe-flexible'
 // 导入Ant Design Web3配置提供者
 import { Web3ConfigProvider } from '@ant-design/web3'
 // 导入钱包连接相关组件和提供者
